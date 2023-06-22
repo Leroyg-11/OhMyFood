@@ -21,6 +21,19 @@
     scale: 1;
   }
 }
+@keyframes btnHover {
+  0% {
+    scale: 1;
+    opacity: 0.5;
+  }
+  50% {
+    scale: 1.02;
+  }
+  100% {
+    scale: 1;
+    opacity: 0.8;
+  }
+}
 @keyframes loading {
   0% {
     opacity: 0;
@@ -164,9 +177,9 @@
 
 .resa {
   margin: auto;
-  height: 39.5vh;
   text-align: center;
   background-color: #F7F7F7;
+  padding-bottom: 35px;
 }
 .resa h1 {
   padding-top: 15px;
@@ -185,6 +198,11 @@
   color: #FFF;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+}
+.resa_btn:hover, .btn_pink:hover {
+  animation-name: btnHover;
+  animation-duration: 1s;
+  opacity: 0.8;
 }
 
 @media screen and (min-width: 770px) {
@@ -254,6 +272,7 @@
 .p_fonctionnement {
   font-size: 15px;
   font-weight: bold;
+  padding-left: 15px;
 }
 
 @media screen and (min-width: 770px) {
@@ -273,7 +292,7 @@
 }
 .main_restaurants {
   background-color: #F7F7F7;
-  padding: 45px 0;
+  padding: 10px 0 45px 0;
 }
 .main_restaurants h2 {
   margin-left: 20px;
@@ -336,6 +355,7 @@
 }
 
 .heart_container {
+  z-index: 1;
   border: none;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);

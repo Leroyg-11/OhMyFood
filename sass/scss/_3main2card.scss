@@ -26,8 +26,7 @@
         margin-left: 20px;
     }
     background-color: #F7F7F7;
-    padding: 45px 0;
-}
+    padding: 10px 0 45px 0;}
 
 .restaurants_cards_container{
     @extend .flex_column;
@@ -91,6 +90,7 @@
 }
 
 .heart_container{
+    z-index: 1;
     @extend .flex_row;
     border: none;
     cursor: pointer;
