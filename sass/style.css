@@ -394,6 +394,11 @@ footer img {
   padding-right: 12px;
 }
 
+.mail a {
+  text-decoration: none;
+  color: white;
+}
+
 @media screen and (min-width: 770px) {
   footer {
     min-height: 70px;
@@ -401,15 +406,16 @@ footer img {
     padding: 25px 50px 25px 25px;
   }
   footer .footer_text_container {
+    margin-right: 15px;
     display: flex;
     align-items: center;
   }
   footer img {
     width: 10%;
     object-fit: contain;
+    padding-top: 20px;
   }
   .footer_text {
-    min-width: 130px;
     margin-right: 10px;
   }
 }
