@@ -110,8 +110,7 @@
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 .header_container .header_logo_index {
-  max-height: 2.5vh;
-  width: fit-content;
+  width: 200px;
   margin: auto;
   padding: 10px 0;
 }
@@ -126,8 +125,7 @@
   align-items: center;
 }
 .header_container nav .header_logo {
-  max-height: 5vh;
-  width: fit-content;
+  width: 200px;
   margin: auto;
   padding: 10px 0;
 }
@@ -207,8 +205,7 @@
   }
   .main_fonctionnement .fonctionnement_btn i {
     padding: 10px;
-    position: relative;
-    left: -15px;
+    font-size: 20px;
   }
   .main_fonctionnement .fonctionnement_btn p {
     position: relative;
@@ -235,7 +232,8 @@
   height: 12vh;
 }
 .fonctionnement_btn i {
-  padding: 35px;
+  font-size: 20px;
+  padding: 20px;
   color: #7E7E7E;
 }
 .fonctionnement_btn .puce_chiffre {
