@@ -40,6 +40,9 @@
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     width: 94%;
     height: auto;
+    a:link{
+        text-decoration: none;
+    }
 }
 
 .card_top{
@@ -81,7 +84,7 @@
     padding: 0 25px 5px 10px;
     line-height: 10px;
 
-    .card_bot_text a{
+    .card_bot_text{
         text-decoration: none;
         color: black
     }
@@ -122,6 +125,7 @@
         animation-duration: 1.5s;
     } 
 }
+
 
 
 

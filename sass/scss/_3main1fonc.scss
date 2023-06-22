@@ -22,11 +22,6 @@
                 // position: relative;
                 // left: -15px;
             }
-            & p{
-                position: relative;
-                left: -10px;
-            }
-
         }
     }
 }
@@ -81,6 +76,11 @@
     i{
         color: $primary-color ;
     }
+}
+
+.p_fonctionnement{
+    font-size: 15px;
+    font-weight: bold;
 }
 
 

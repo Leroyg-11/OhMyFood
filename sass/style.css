@@ -103,7 +103,7 @@
 
 @media screen and (min-width: 770px) {
   .header_logo {
-    min-height: 9vh;
+    width: 200px;
   }
 }
 .header_container {
@@ -207,10 +207,6 @@
     padding: 10px;
     font-size: 20px;
   }
-  .main_fonctionnement .fonctionnement_btn p {
-    position: relative;
-    left: -10px;
-  }
 }
 .main_fonctionnement {
   width: auto;
@@ -255,6 +251,11 @@
   color: #9356DC;
 }
 
+.p_fonctionnement {
+  font-size: 15px;
+  font-weight: bold;
+}
+
 @media screen and (min-width: 770px) {
   .main_container .main_fonctionnement {
     padding: 50px 11%;
@@ -288,6 +289,9 @@
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   width: 94%;
   height: auto;
+}
+.restaurants_card a:link {
+  text-decoration: none;
 }
 
 .card_top {
@@ -326,7 +330,7 @@
   padding: 0 25px 5px 10px;
   line-height: 10px;
 }
-.card_bottom .card_bot_text a {
+.card_bottom .card_bot_text {
   text-decoration: none;
   color: black;
 }
