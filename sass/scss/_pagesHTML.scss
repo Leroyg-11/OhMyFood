@@ -1,0 +1,167 @@
+@media screen and (min-width: 770px) {
+    .main_html{
+        margin: 0 13% 0 13%;
+        .title_h1{
+            justify-content: center;
+            .heart_container{
+                right: 135px;
+            }
+        }
+    }
+    
+}
+
+.main_html{
+    width: auto;
+    position: relative;
+    margin-top: -20px;
+    border-radius: 15px 15px 0px 0px;
+    padding: 30px 3.5%;
+    background-color: #F6F6F6;
+
+    .title_h1{
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    button{
+        margin: 0px -30px 0 0px;
+    }
+}
+
+.entrees .choix{
+    animation: loading;
+    animation-duration: 1s;
+    animation-delay: 1.5s; 
+}
+.plats .choix{
+    animation: loading;
+    animation-duration: 1s;
+    animation-delay: 1.75s; 
+}
+
+.desserts .choix{
+    animation: loading;
+    animation-duration: 1s;
+    animation-delay: 2s;  
+}
+
+.menu_container{
+    @extend .flex_column;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2% 0;
+
+
+    .choix{
+        position: relative;
+        @extend .flex_row;
+        align-items: center;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: auto;
+        margin: 2% 0;
+        padding: 0.75rem 1rem .75rem 2rem;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        
+        //transition 
+        $width: 75px;
+        $transition: all 500ms ease-in-out;
+        
+    
+        &:after {
+            font-family: "Font Awesome 6 Free";
+            content: "\f058";
+            background-color: $tertiary-color ;
+            font-size: 20px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: $width;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+
+            right: $width * -1;
+            transition: $transition;
+            
+        }
+        
+    
+        &:hover{
+            &:after{
+                right: 0;
+                opacity: 1;
+            }
+
+            .choix_right {
+                transform: translateX($width * -0.75);
+            }
+            .choix_left {
+                width: 20%;
+            }
+                
+            
+        }
+        
+        &_right {
+            display: flex;
+            height: 100%;
+            align-items: flex-end;
+            transition: $transition;
+            
+            .prix_plat {
+                font-weight: 700;
+                margin-right: 15px;
+            }
+            i {
+                display: none;
+            }
+        }
+
+        &_left {
+            min-width: 60%;
+            padding-right: 15px;
+            transition: $transition;
+
+            
+            p {
+                margin: 0;
+            }
+            
+            .nom_article, .desc_plat {
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            .nom_article {
+                margin-bottom: 0.75rem;
+                font-weight: 500;
+                font-size: 18px;
+            }
+            .desc_plat{
+                font-weight: 300;
+                font-size: 15px ;
+                
+            }
+        }
+    
+}
+        
+    }
+    
+}
+
+
+.btn_html{
+    margin: 40px auto 20px auto;
+    @extend .flex_row;
+    align-items: center;
+}
+

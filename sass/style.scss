@@ -1,0 +1,72 @@
+
+@import "./scss/variables/mixin";
+@import "./scss/variables/keyframes";
+@import "./scss/_loader";
+@import "./scss/_1header";
+@import "./scss/_2nav";
+@import "./scss/_3main1fonc";
+@import "./scss/_3main2card";
+@import "./scss/_4footer";
+@import "./scss/_pagesHTML";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.title_h2{
+    @extend .flex_column;
+    width: fit-content;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    .h2_underline{
+        border: 2px solid $tertiary-color;
+        width: 65%;
+
+    }
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    animation: opacity 1.5s forwards;
+    
+}
+

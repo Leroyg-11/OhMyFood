@@ -1,0 +1,56 @@
+@media screen and (min-width: 770px) {
+    .resa br{
+        display: none
+    }
+    .size1{
+        font-weight: 700;
+        font-size: 40px
+    }
+    .resa .resa_p{
+        font-weight: 300;
+        font-size: 18px
+    }
+}
+
+.choix_ville{
+    @extend .flex_row;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: #eaeaea;
+
+    .select_ville{
+        border-style: none;
+        appearance: none;
+        background-color: #eaeaea;
+        margin-left: 10px;
+    }
+}
+
+.resa{
+    h1{
+        padding-top: 15px;
+    }
+    @extend .flex_column;
+    margin: auto;
+    height: 39.5vh;
+    text-align: center;
+    background-color: #F7F7F7;
+    p{
+        margin: 15px;
+    }
+}
+
+
+.resa_btn, .btn_pink{
+    margin: auto;
+    cursor: pointer;
+    height: 50px;
+    width: 30vh;
+    border-radius: 25px;
+    border-style: none;
+    color: #FFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+}
+
