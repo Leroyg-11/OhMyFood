@@ -158,6 +158,10 @@
     
 }
 
+.heart_title{
+    @extend .flex_row
+}
+
 
 .btn_html{
     margin: 40px auto 20px auto;

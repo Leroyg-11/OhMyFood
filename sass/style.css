@@ -4,7 +4,7 @@
   justify-content: center;
 }
 
-.flex_row, .btn_html, .main_html .menu_container .choix, .heart_container, .choix_ville {
+.flex_row, .btn_html, .heart_title, .main_html .menu_container .choix, .heart_container, .choix_ville {
   display: flex;
   flex-direction: row;
   justify-content: center;
