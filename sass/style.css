@@ -237,6 +237,10 @@
 .main_fonctionnement h2 {
   margin-top: -10px;
 }
+.main_fonctionnement .container_btn_fonctionnement {
+  padding-inline-start: 0px;
+}
+
 .fonctionnement_btn {
   display: flex;
   align-items: center;
@@ -262,6 +266,8 @@
   width: 15px;
   height: 15px;
   color: white;
+  text-align: center;
+  line-height: 1;
 }
 
 .fonctionnement_btn:hover .puce_chiffre {
