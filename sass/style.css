@@ -367,6 +367,7 @@
   z-index: 1;
   border: none;
   cursor: pointer;
+  color: black;
   background-color: rgba(0, 0, 0, 0);
   font-size: 30px;
   position: absolute;
@@ -384,12 +385,12 @@
 
 .heart_container:hover .heart_2 {
   opacity: 1;
+  animation-name: bounce;
+  animation-duration: 1.5s;
 }
 
 .heart_container:focus .heart_2 {
   opacity: 1;
-  animation-name: bounce;
-  animation-duration: 1.5s;
 }
 
 footer {
